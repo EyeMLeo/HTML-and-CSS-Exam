@@ -47,11 +47,37 @@ p {
   margin-top: 0;
 }
 
+.shadowForText {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 html {
   font-size: 10px;
   font-family: "Inter", sans-serif;
 }
-html .body {
+html h1 {
+  font-weight: 900;
+  font-size: 4.8rem;
+  color: #111111;
+}
+html h2 {
+  font-weight: 500;
+  font-size: 4rem;
+  color: #111111;
+}
+html h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #FF3998;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+html p {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #555555;
+}
+body {
   background-color: #ffffff;
 }
 
