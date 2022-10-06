@@ -81,6 +81,15 @@ body {
   background-color: #ffffff;
 }
 
+section {
+  padding-top: 4rem;
+}
+
+main {
+  overflow: hidden;
+  overflow-y: visible;
+}
+
 .container {
   padding-left: 3.2rem;
   padding-right: 3.2rem;
@@ -104,6 +113,7 @@ button {
 
 header {
   height: 10rem;
+  background-color: transparent;
 }
 
 .header__container {
@@ -124,4 +134,22 @@ header {
 }
 .header__container .fa-bars {
   font-size: 2.4rem;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.hero__textBox {
+  min-width: 274px;
+}
+.hero__imgBox {
+  position: relative;
+}
+.hero__imgBox .heroImg {
+  position: absolute;
+  min-height: 380px;
+  max-height: 100%;
+  max-width: none;
+  z-index: 2;
 }/*# sourceMappingURL=main.css.map */
