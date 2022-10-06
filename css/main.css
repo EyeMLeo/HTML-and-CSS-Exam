@@ -148,21 +148,25 @@ header {
   font-size: 2.4rem;
 }
 
-.hero .container {
+.hero .container, .about .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.hero__textBox {
+.hero .textBox, .about .textBox {
   min-width: 274px;
 }
-.hero__imgBox {
+.hero .imgBox, .about .imgBox {
   position: relative;
+  height: 100%;
 }
-.hero__imgBox .heroImg {
+.hero .NFTImg, .about .NFTImg {
   position: absolute;
-  min-height: 380px;
-  max-height: 100%;
-  max-width: none;
+  height: 100%;
+}
+.hero .NFTImg, .about .NFTImg {
+  right: -230px;
+  top: -20%;
+  min-width: 400px;
 }
 
 .news {

@@ -154,30 +154,40 @@ align-items: center;
 
     .container{
         display: grid;
-        grid-template-columns: 1fr 1fr;;
+        grid-template-columns: 1fr 1fr;
     }
 
-    &__textBox{
+    .textBox{
         min-width: 274px;
     }
 
-    &__imgBox{
+    .imgBox{
         position: relative;
-
-        .heroImg{
-            position: absolute;
-            min-height: 380px;
-            max-height: 100%;
-            max-width: none;
-             
-            // heroImg failed position atempts...
-            // max-height: 380px;
-            // left: -70%;
-            // top: -20%;
-            // z-index: 2;
-
-         }
+        height: 100%;
     }
+
+    .NFTImg{
+        position: absolute;
+        height: 100%;
+        
+     }
+
+    // MIXIN TEST 
+     @mixin NFTIMAGES($right,$top,$minWidth){
+        right: $right;
+        top: $top;
+        min-width: $minWidth;
+
+     }
+
+     .NFTImg{
+        @include NFTIMAGES(-230px,-20% ,400px );
+        // Makes
+        //  right: -230px;
+        //  top: -20%;
+        //  min-width: 400px;
+    }
+       // /MIXIN TEST  
 }
 // /HERO
 // NEWS
@@ -320,17 +330,14 @@ align-items: center;
 
 }
 
-
-        
-
-
-
-
-
-
-
 // /AUCTION
+//about
 
+.about{
+    @extend .hero;
+
+
+}
 
 
 
@@ -358,3 +365,5 @@ align-items: center;
         // News background strech and scale
         // News background extra padding top
         // Icons (companies) weird sizes
+        // Auction Card Sizes and positions, margins paddings
+        
