@@ -180,4 +180,15 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
+}
+.icons .iconContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.icons .companyIcon {
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: self-start;
+  min-height: 100%;
 }/*# sourceMappingURL=main.css.map */
