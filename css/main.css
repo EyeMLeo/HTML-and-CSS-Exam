@@ -260,4 +260,13 @@ header {
 .auctionCard--line--2__right img {
   padding-right: 1em;
   height: 3rem;
+}
+
+.about .NFTImg {
+  right: -150px;
+  top: 20%;
+  min-width: 400px;
+}
+.about .textBox {
+  min-width: 207px;
 }/*# sourceMappingURL=main.css.map */

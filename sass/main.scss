@@ -336,9 +336,23 @@ align-items: center;
 .about{
     @extend .hero;
 
+    .NFTImg{
+    
+         right: -150px;
+         top: 20%;
+         min-width: 400px;
+    }
 
+
+    .textBox{
+        min-width: 207px;
+
+    }
 }
+// /about
+//footer
 
+// /footer
 
 
 
