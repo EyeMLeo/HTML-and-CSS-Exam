@@ -49,6 +49,7 @@ p {
 
 html {
   font-size: 10px;
+  font-family: "Inter", sans-serif;
 }
 html .body {
   background-color: #ffffff;
