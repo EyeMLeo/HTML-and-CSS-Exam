@@ -50,11 +50,18 @@ p {
 html {
   font-size: 10px;
 }
+html .body {
+  background-color: #ffffff;
+}
 
 .container {
   padding-left: 3.2rem;
   padding-right: 3.2rem;
   height: 100%;
+}
+
+.icon, .header__container .fa-bars {
+  color: #999999;
 }
 
 header {

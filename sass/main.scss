@@ -1,11 +1,22 @@
 @use 'reset';
 
 
+// Extended use
 
+// colors
+$primary-text-color: #111111;
+$secondary-text-color: #555555;
+$primary-icon-color: #999999;
+$contrast-text-color: #FF3998;
+$background-color: #ffffff;
+$btn-color: #ffa500;
 
-
+// styles
 html{
 font-size: 10px;
+    .body{
+    background-color:$background-color
+    }
 }
 
 .container{
@@ -14,8 +25,15 @@ font-size: 10px;
     height: 100%;
 }
 
+.icon{
+    color: $primary-icon-color;
+}
 
 
+
+
+
+// /Extended use
 // HEADER
 
 header{
@@ -35,6 +53,7 @@ align-items: center;
     }
 
     .fa-bars{
+        @extend.icon;
        font-size: 2.4rem;
     }
 
