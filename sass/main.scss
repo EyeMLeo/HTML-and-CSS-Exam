@@ -57,7 +57,8 @@ p{
 
 
 a{
-    
+    @extend p;
+    text-decoration: underline;
 }
 }
 

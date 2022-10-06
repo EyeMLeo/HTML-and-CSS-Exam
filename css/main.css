@@ -43,7 +43,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+html a {
   margin-top: 0;
 }
 
@@ -72,7 +73,7 @@ html h3 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-html p {
+html p, html a {
   font-weight: 400;
   font-size: 2rem;
   color: #555555;
@@ -80,6 +81,10 @@ html p {
 html .overrideTextColor {
   color: #111111;
 }
+html a {
+  text-decoration: underline;
+}
+
 body {
   background-color: #ffffff;
 }
