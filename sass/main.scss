@@ -216,9 +216,26 @@ align-items: center;
 // / NEWS
 // ICONS
 
+.icons{
 
 
 
+
+.iconContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap:2rem;
+}
+
+.companyIcon{
+    align-self: center;
+    justify-self:self-start;
+    min-height: 100%;
+}
+
+
+
+}
 
 
 
@@ -251,6 +268,7 @@ align-items: center;
 
 
         // TO FIX
-        //Hero IMG
+        // Hero IMG
         // News background strech and scale
         // News background extra padding top
+        // Icons (companies) weird sizes
