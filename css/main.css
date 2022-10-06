@@ -77,12 +77,16 @@ html p {
   font-size: 2rem;
   color: #555555;
 }
+html .overrideTextColor {
+  color: #111111;
+}
 body {
   background-color: #ffffff;
 }
 
-section {
+.paddingTopAndBottom, section {
   padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 main {
@@ -90,9 +94,12 @@ main {
   overflow-y: visible;
 }
 
-.container {
+.paddingLeftandRight, .news .newsTextBox, .container {
   padding-left: 3.2rem;
   padding-right: 3.2rem;
+}
+
+.container {
   height: 100%;
 }
 
@@ -151,5 +158,26 @@ header {
   min-height: 380px;
   max-height: 100%;
   max-width: none;
-  z-index: 2;
+}
+
+.news {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.news .news__container {
+  width: 100%;
+  height: 100%;
+}
+.news .news__img {
+  overflow: hidden;
+  position: absolute;
+  color: #111111;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */
