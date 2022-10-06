@@ -9,7 +9,7 @@ $secondary-text-color: #555555;
 $primary-icon-color: #999999;
 $contrast-text-color: #FF3998;
 $background-color: #ffffff;
-$btn-color: #ffa500;
+$btn-border-color: #ff6643;
 
 .shadowForText{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -69,6 +69,21 @@ background-color:$background-color
 
 .icon{
     color: $primary-icon-color;
+}
+
+button{
+    color: $primary-text-color;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1.1em 2.8em;
+    border-radius: 2.5em;
+    border: solid 5px;
+    border-color: $btn-border-color;
+    background-color: transparent;
+
+
+
+
 }
 
 

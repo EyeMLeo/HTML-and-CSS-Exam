@@ -91,6 +91,17 @@ body {
   color: #999999;
 }
 
+button {
+  color: #111111;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 1.1em 2.8em;
+  border-radius: 2.5em;
+  border: solid 5px;
+  border-color: #ff6643;
+  background-color: transparent;
+}
+
 header {
   height: 10rem;
 }
