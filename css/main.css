@@ -79,6 +79,7 @@ html h4 {
   font-size: 1.6em;
   color: #555555;
   text-transform: uppercase;
+  padding-top: 4rem;
 }
 html p, html a, html ul li {
   font-weight: 400;
@@ -94,6 +95,9 @@ html .p_Copyright, html footer .Copyright, footer html .Copyright {
 html ul {
   list-style: none;
   padding-left: 0%;
+}
+html ul li {
+  padding-bottom: 0.5em;
 }
 html a {
   text-decoration: underline;
@@ -285,6 +289,31 @@ header {
   min-width: 207px;
 }
 
+footer .logoImgFooter {
+  height: 3.6rem;
+}
 footer a {
   text-decoration: none;
+}
+footer .Copyright {
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+footer .footerParagraph {
+  margin-top: 3rem;
+  margin-bottom: 3.2rem;
+}
+footer .icon, footer .header__container .fa-bars, .header__container footer .fa-bars {
+  font-size: 1.8rem;
+  padding-right: 1.6rem;
+}
+footer .logoImgFooter {
+  margin-top: 3rem;
+}
+footer .footerNavigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer .iconBox {
+  margin-bottom: 3rem;
 }/*# sourceMappingURL=main.css.map */
