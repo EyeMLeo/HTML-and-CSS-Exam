@@ -44,6 +44,7 @@ h4,
 h5,
 h6,
 p,
+html ul li,
 html a {
   margin-top: 0;
 }
@@ -73,13 +74,26 @@ html h3 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-html p, html a {
+html h4 {
+  font-weight: 700;
+  font-size: 1.6em;
+  color: #555555;
+  text-transform: uppercase;
+}
+html p, html a, html ul li {
   font-weight: 400;
   font-size: 2rem;
   color: #555555;
 }
 html .overrideTextColor {
   color: #111111;
+}
+html .p_Copyright, html footer .Copyright, footer html .Copyright {
+  color: #999999;
+}
+html ul {
+  list-style: none;
+  padding-left: 0%;
 }
 html a {
   text-decoration: underline;
@@ -202,25 +216,25 @@ header {
   min-height: 100%;
 }
 
-.auctionCard--line p, .auctionCard--line html a, html .auctionCard--line a {
+.auctionCard--line p, .auctionCard--line html ul li, html ul .auctionCard--line li, .auctionCard--line html a, html .auctionCard--line a {
   color: #777777;
 }
 
-.auctionCard--line--1 p, .auctionCard--line--1 html a, html .auctionCard--line--1 a {
+.auctionCard--line--1 p, .auctionCard--line--1 html ul li, html ul .auctionCard--line--1 li, .auctionCard--line--1 html a, html .auctionCard--line--1 a {
   font-size: 1.2rem;
   font-weight: 500;
 }
-.auctionCard--line--1 .auctionCard--line--1__left p, .auctionCard--line--1 .auctionCard--line--1__left html a, html .auctionCard--line--1 .auctionCard--line--1__left a {
+.auctionCard--line--1 .auctionCard--line--1__left p, .auctionCard--line--1 .auctionCard--line--1__left html ul li, html ul .auctionCard--line--1 .auctionCard--line--1__left li, .auctionCard--line--1 .auctionCard--line--1__left html a, html .auctionCard--line--1 .auctionCard--line--1__left a {
   color: #FF8139;
 }
 
-.auctionCard--line--2 p, .auctionCard--line--2 html a, html .auctionCard--line--2 a {
+.auctionCard--line--2 p, .auctionCard--line--2 html ul li, html ul .auctionCard--line--2 li, .auctionCard--line--2 html a, html .auctionCard--line--2 a {
   color: #111111;
   font-weight: 500;
   font-size: 2rem;
 }
 
-.auctionCard--line--3 p, .auctionCard--line--3 html a, html .auctionCard--line--3 a {
+.auctionCard--line--3 p, .auctionCard--line--3 html ul li, html ul .auctionCard--line--3 li, .auctionCard--line--3 html a, html .auctionCard--line--3 a {
   font-weight: 400;
   font-size: 1.8rem;
 }
@@ -243,7 +257,7 @@ header {
           justify-content: space-between;
   padding: 0em 2em;
 }
-.auctionCard--line p, .auctionCard--line html a, html .auctionCard--line a {
+.auctionCard--line p, .auctionCard--line html ul li, html ul .auctionCard--line li, .auctionCard--line html a, html .auctionCard--line a {
   margin: 0;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -269,4 +283,8 @@ header {
 }
 .about .textBox {
   min-width: 207px;
+}
+
+footer a {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

@@ -46,7 +46,11 @@ h3{
     text-transform: uppercase;
 }
 h4{
-
+// reserved for footer header
+font-weight: 700;
+font-size: 1.6em;
+color: $secondary-text-color;
+text-transform: uppercase;
 }
 
 p{
@@ -56,6 +60,18 @@ p{
 }
 .overrideTextColor{
     color:$primary-text-color
+}
+
+.p_Copyright{
+    color: $primary-icon-color;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0%;
+    li{
+        @extend p;
+    }
 }
 
 
@@ -351,7 +367,18 @@ align-items: center;
 }
 // /about
 //footer
+footer{
+    a{
+        text-decoration: none;
+    }
 
+
+    .Copyright{
+        @extend .p_Copyright;
+    }
+
+    
+}
 // /footer
 
 
