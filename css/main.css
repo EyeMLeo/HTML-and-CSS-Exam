@@ -1,3 +1,498 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+textarea,
+select {
+  font-size: 16px;
+  padding: 0.3em 0.8em;
+  border-radius: 4px;
+  border: 1px solid #777;
+  display: block;
+  max-width: 300px;
+}
+
+textarea {
+  min-height: 5rem;
+  min-width: 500px;
+  resize: vertical;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+html ul li,
+html a {
+  margin-top: 0;
+}
+
+.shadowForText {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 html {
   font-size: 10px;
+  font-family: "Inter", sans-serif;
+}
+html h1 {
+  font-weight: 900;
+  font-size: 4.8rem;
+  color: #111111;
+}
+html h2 {
+  font-weight: 500;
+  font-size: 4rem;
+  color: #111111;
+}
+html h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #FF3998;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+html h4 {
+  font-weight: 700;
+  font-size: 1.6em;
+  color: #555555;
+  text-transform: uppercase;
+  padding-top: 4rem;
+}
+html p, html a, html ul li {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #555555;
+  line-height: 1.5em;
+}
+html .overrideTextColor {
+  color: #111111;
+}
+html .p_Copyright, html footer .Copyright, footer html .Copyright {
+  color: #999999;
+}
+html ul {
+  list-style: none;
+  padding-left: 0%;
+}
+html ul li {
+  padding-bottom: 0.5em;
+}
+html a {
+  font-weight: 500;
+}
+html body {
+  background-color: #ffffff;
+}
+html .paddingTopAndBottom, html section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+html main {
+  overflow: hidden;
+  overflow-y: visible;
+}
+html .paddingLeftandRight, html .news .newsTextBox, .news html .newsTextBox, html .container {
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+html .container {
+  height: 100%;
+}
+html .icon, html header .header__container .fa-bars, header .header__container html .fa-bars {
+  color: #999999;
+}
+html button {
+  color: #111111;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 1.1em 2.8em;
+  border-radius: 2.5em;
+  border: solid 5px;
+  border-color: #ff6643;
+  background-color: transparent;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+header {
+  height: 10rem;
+  background-color: transparent;
+}
+header s {
+  font-size: 2rem;
+}
+header ul {
+  display: none;
+}
+header ul li {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 2rem;
+}
+header .headerLinkBeutyfy {
+  color: #FF3998;
+}
+header .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header__container .logoImg {
+  height: 3.6rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+header .header__container .fa-bars {
+  font-size: 2.4rem;
+}
+
+.hero {
+  padding-top: 0;
+}
+.hero h3 {
+  padding-top: 7rem;
+}
+.hero .container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.hero .minimumBoxForTextBox {
+  overflow: visible;
+  min-width: 20rem;
+  height: 100%;
+  z-index: 10;
+}
+.hero .textBox {
+  width: 27.2em;
+}
+.hero .textBox p, .hero .textBox html ul li, html ul .hero .textBox li, .hero .textBox html a, html .hero .textBox a {
+  max-width: 520px;
+}
+.hero .imgBox {
+  height: 100%;
+  width: 100%;
+  min-width: 370px;
+  display: grid;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero .NFTImg {
+  max-height: 100%;
+  min-width: 300px;
+  z-index: 1;
+}
+
+.news {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+.news .news__container {
+  width: 100%;
+  height: 100%;
+  padding-top: 8rem;
+  overflow: hidden;
+}
+.news .news__img {
+  position: absolute;
+  color: #111111;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.icons .iconContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.icons .companyIcon {
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: self-start;
+  min-height: 100%;
+}
+.icons .companyIconHidden {
+  visibility: hidden;
+}
+
+.auction a {
+  text-decoration: underline;
+}
+.auction .auctionCardBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4rem;
+  overflow-x: scroll;
+}
+.auction .auctionCard--line p, .auction .auctionCard--line html ul li, html ul .auction .auctionCard--line li, .auction .auctionCard--line html a, html .auction .auctionCard--line a {
+  color: #777777;
+}
+.auction .auctionCard--line--1 {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+.auction .auctionCard--line--1 p, .auction .auctionCard--line--1 html ul li, html ul .auction .auctionCard--line--1 li, .auction .auctionCard--line--1 html a, html .auction .auctionCard--line--1 a {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.auction .auctionCard--line--1 .auctionCard--line--1__left p, .auction .auctionCard--line--1 .auctionCard--line--1__left html ul li, html ul .auction .auctionCard--line--1 .auctionCard--line--1__left li, .auction .auctionCard--line--1 .auctionCard--line--1__left html a, html .auction .auctionCard--line--1 .auctionCard--line--1__left a {
+  color: #FF8139;
+}
+.auction .auctionCard--line--2 {
+  margin-top: 0.3rem;
+  margin-bottom: 0rem;
+}
+.auction .auctionCard--line--2 p, .auction .auctionCard--line--2 html ul li, html ul .auction .auctionCard--line--2 li, .auction .auctionCard--line--2 html a, html .auction .auctionCard--line--2 a {
+  color: #111111;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.auction .auctionCard--line--3 {
+  margin-top: 0rem;
+  margin-bottom: 1.8rem;
+}
+.auction .auctionCard--line--3 p, .auction .auctionCard--line--3 html ul li, html ul .auction .auctionCard--line--3 li, .auction .auctionCard--line--3 html a, html .auction .auctionCard--line--3 a {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.auction .auctionCard {
+  background-color: #EEEEEE;
+  overflow: hidden;
+  border-radius: 15px;
+  min-width: 290px;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+.auction .auctionCard__img {
+  min-width: 100%;
+}
+.auction .auctionCard--line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0em 2em;
+}
+.auction .auctionCard--line p, .auction .auctionCard--line html ul li, html ul .auction .auctionCard--line li, .auction .auctionCard--line html a, html .auction .auctionCard--line a {
+  margin: 0;
+  padding: 0;
+}
+.auction .auctionCard--line--2__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.auction .auctionCard--line--2__right img {
+  padding-right: 1em;
+  height: 3rem;
+}
+
+.about {
+  overflow: hidden;
+  border-top: #EEEEEE solid 2px;
+  border-bottom: #EEEEEE solid 2px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.about button {
+  margin-bottom: 8rem;
+}
+.about h3 {
+  padding-top: 7rem;
+}
+.about .container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.about .minimumBoxForTextBox {
+  overflow: visible;
+  min-width: 13rem;
+  height: 100%;
+  z-index: 10;
+}
+.about .textBox {
+  min-width: 20.2em;
+}
+.about .textBox p, .about .textBox html ul li, html ul .about .textBox li, .about .textBox html a, html .about .textBox a {
+  max-width: 26em;
+}
+.about .imgBox {
+  height: 100%;
+  width: 100%;
+  min-width: 400px;
+  display: grid;
+  -ms-flex-line-pack: end;
+      align-content: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5rem;
+}
+.about .NFTImg {
+  max-height: 100%;
+  min-width: 200px;
+  z-index: 1;
+}
+
+footer {
+  overflow: hidden;
+}
+footer .logoImgFooter {
+  height: 3.6rem;
+}
+footer a {
+  text-decoration: none;
+}
+footer .Copyright {
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+footer .footerParagraph {
+  margin-top: 3rem;
+  margin-bottom: 3.2rem;
+}
+footer .icon, footer header .header__container .fa-bars, header .header__container footer .fa-bars {
+  font-size: 1.8rem;
+  padding-right: 1.6rem;
+}
+footer .logoImgFooter {
+  margin-top: 3rem;
+}
+footer .footerNavigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer .iconBox {
+  margin-bottom: 3rem;
+}
+footer .copyrightLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 700px;
+}
+footer .CopyrightHidden {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 1000px) {
+  html .container {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  header {
+    padding-top: 7rem;
+    padding-bottom: 13rem;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .fa-bars {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 9.6rem;
+  }
+  .hero .textBox {
+    min-width: 68rem;
+  }
+  .news {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+  .news .news__container {
+    overflow: hidden;
+    border-radius: 1.5rem;
+  }
+  .news .news__container .news__img {
+    border-radius: inherit;
+  }
+  .icons {
+    padding-top: 12.2rem;
+    padding-bottom: 8rem;
+  }
+  .icons .companyIconHidden {
+    visibility: visible;
+  }
+  .icons .iconContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .about {
+    padding-top: 5rem;
+  }
+  .about h1 {
+    font-size: 5.6rem;
+    padding-bottom: 2.4rem;
+    margin-bottom: 0;
+  }
+  .about h3 {
+    margin-bottom: 2.4rem;
+  }
+  .about button {
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+  }
+  footer {
+    padding-top: 10rem;
+  }
+  footer .footerGridLine {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .footerGridLine .footerNavigation {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  footer .CopyrightHidden {
+    visibility: visible;
+  }
+  footer .copyrightLine {
+    padding-top: 11rem;
+  }
 }/*# sourceMappingURL=main.css.map */

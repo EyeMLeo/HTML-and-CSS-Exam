@@ -5,46 +5,231 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html and css exam</title>
+
+    <!-- normalise -->
+    <link rel="stylesheet"
+    href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <!--fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,700&family=Raleway:wght@400;700&family=Source+Sans+Pro:wght@200;300;400;700&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <!-- HEADER -->
     <header>
-
+        <div class="header__container container">
+            <img class="logoImg" src="./assets/assets/logo.svg" alt="Logo">
+            <nav>
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <ul>
+                    <li><a href="">Features</a></li>    
+                    <li><a href="">About</a></li>    
+                    <li><a href="">Launch</a></li>    
+                    <li><a class="headerLinkBeutyfy" href="">Sign Up</a></li>    
+                </ul>
+            </nav>
+        </div>
     </header>
     <!--/ HEADER -->
     <!-- MAIN -->
     <main> 
         <!-- hero -->
         <section class="hero">
-
+            <div class="container">
+                <div class="minimumBoxForTextBox">
+                    <div class="textBox">
+                        <h3>Launching Soon</h3>
+                        <h1>An NFT like no other</h1>
+                        <p class="shadowForText">Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live.</p>
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+                <div class="imgBox">
+                    <img class="NFTImg" src="./assets/assets/graphic.svg" alt="nft-hero-image">
+                </div>
+            </div>
         </section>
         <!--/ hero -->
         <!-- news -->
         <section class="news">
-
+            <div class="news__container">
+                <img class="news__img" src="./assets/assets/background.svg" alt="news-Background">
+                <div class="newsTextBox">
+                    <h2>Free NFT for early birds </h2>
+                    <p class="overrideTextColor">Sign up today and you’ll get a free NFT when we launch.</p>
+                </div>
+            </div>
         </section>
         <!--/ news -->
         <!-- icons -->
         <section class="icons">
-
+            <div class="container iconContainer">
+                <img class="companyIcon" src="./assets/assets/companies/1.svg" alt="Company-Icon">
+                <img class="companyIcon" src="./assets/assets/companies/2.svg" alt="Company-Icon">
+                <img class="companyIcon" src="./assets/assets/companies/3.svg" alt="Company-Icon">
+                <img class="companyIcon" src="./assets/assets/companies/4.svg" alt="Company-Icon">
+                <img class="companyIcon companyIconHidden" src="./assets/assets/companies/5.svg" alt="Company-Icon">
+            </div>
         </section>
         <!--/ icons -->
         <!-- auction -->
         <section class="auction">
+            <div class="container">
+                <h2>LE Super Rare Auction</h2>
+                <p>We have released four limited edition NFTs early which can be bid on via <a href="">OpenSea</a>.</p>
+                <!-- AuctionCardBox -->
+                <div class="auctionCardBox">
 
+                    <!-- Auction Card 1 -->
+                        <div class="auctionCard">
+                            <img class="auctionCard__img" src="./assets/assets/ntfs/ntf-1.svg" alt="NFT-Image">
+                            <div class="auctionCard--line auctionCard--line--1 ">
+                                <div class="auctionCard--line--1__left"><p>GLOOP SERIES</p></div>
+                                <div class="auctionCard--line--1__right" ><p>TOP BID</p></div>
+                            </div>
+                            <div class="auctionCard--line auctionCard--line--2">
+                                <div class="auctionCard--line--2__left"><p>Purple Man</p></div>
+                                <div class="auctionCard--line--2__right" ><img src=".//assets/assets/eth.svg" alt="ETH-Icon"><p>2.99ETH</p></div>
+                            </div>
+                            <div class="auctionCard--line auctionCard--line--3">
+                                <div class="auctionCard--line--3__left"><p>#12983</p></div>
+                                <div class="auctionCard--line--3__right" ><p>1 day left</p></div>
+                            </div>
+                        </div>
+                    <!--/ Auction Card 1 -->
+                    <!-- Auction Card 2 -->
+                        <div class="auctionCard">
+                            <img class="auctionCard__img" src="./assets/assets/ntfs/nft-2.svg" alt="NFT-Image">
+                            <div class="auctionCard--line auctionCard--line--1 ">
+                                <div class="auctionCard--line--1__left"><p>GLOOP SERIES</p></div>
+                                <div class="auctionCard--line--1__right" ><p>TOP BID</p></div>
+                            </div>
+                            <div class="auctionCard--line auctionCard--line--2">
+                                <div class="auctionCard--line--2__left"><p>Beige</p></div>
+                                <div class="auctionCard--line--2__right" ><img src=".//assets/assets/eth.svg" alt="ETH-Icon"><p>2.99ETH</p></div>
+                            </div>
+                            <div class="auctionCard--line auctionCard--line--3">
+                                <div class="auctionCard--line--3__left"><p>#12983</p></div>
+                                <div class="auctionCard--line--3__right" ><p>1 day left</p></div>
+                            </div>
+                        </div>
+                    <!--/ Auction Card 2 -->
+                    <!-- Auction Card 3 -->
+                        <div class="auctionCard">
+                            <img class="auctionCard__img" src="./assets/assets/ntfs/ntf-3.svg" alt="NFT-Image">
+                            <div class="auctionCard--line auctionCard--line--1 ">
+                                <div class="auctionCard--line--1__left"><p>GLOOP SERIES</p></div>
+                                <div class="auctionCard--line--1__right" ><p>TOP BID</p></div>
+                            </div>
+                            <div class="auctionCard--line auctionCard--line--2">
+                                <div class="auctionCard--line--2__left"><p>Red Man</p></div>
+                                <div class="auctionCard--line--2__right" ><img src=".//assets/assets/eth.svg" alt="ETH-Icon"><p>2.99ETH</p></div>
+                            </div>
+                            <div class="auctionCard--line auctionCard--line--3">
+                                <div class="auctionCard--line--3__left"><p>#12983</p></div>
+                                <div class="auctionCard--line--3__right" ><p>1 day left</p></div>
+                            </div>
+                        </div>
+                    <!--/ Auction Card 3 -->
+                    <!-- Auction Card 4 -->
+                        <div class="auctionCard">
+                            <img class="auctionCard__img" src="./assets/assets/ntfs/ntf-4.svg" alt="NFT-Image">
+                            <div class="auctionCard--line auctionCard--line--1 ">
+                                <div class="auctionCard--line--1__left"><p>GLOOP SERIES</p></div>
+                                <div class="auctionCard--line--1__right" ><p>TOP BID</p></div>
+                            </div>
+                            <div class="auctionCard--line auctionCard--line--2">
+                                <div class="auctionCard--line--2__left"><p>Green</p></div>
+                                <div class="auctionCard--line--2__right" ><img src=".//assets/assets/eth.svg" alt="ETH-Icon"><p>2.99ETH</p></div>
+                            </div>
+                            <div class="auctionCard--line auctionCard--line--3">
+                                <div class="auctionCard--line--3__left"><p>#12983</p></div>
+                                <div class="auctionCard--line--3__right" ><p>1 day left</p></div>
+                            </div>
+                        </div>
+                    <!--/ Auction Card 4 -->
+
+                </div>
+                <!--/ AuctionCardBox -->
+
+            </div>
         </section>
         <!--/ auction -->
         <!-- about -->
         <section class="about">
-
+                <div class="container">
+                    <div class="minimumBoxForTextBox">
+                         <div class="textBox">
+                             <h3>Launching Soon</h3>
+                             <h1>An NFT like no other</h1>
+                             <p class="">Don’t miss out on the release of our new NFT. Sign up below to receive updates.</p>
+                             <button>Sign Up</button>
+                         </div>
+                        </div>
+                       <div class="imgBox">
+                           <img class="NFTImg NFTImg__hero" src="./assets/assets/upsell-footer-image.svg" alt="nft-about-image">
+                       </div>
+                </div>
         </section>
         <!--/ about -->
     </main>
     <!--/ MAIN -->
     <!--FOOTER -->
     <footer>
+        <div class="container">
 
+            <div class="footerGridLine">
+                <div class="iconBox">
+                    <img class="logoImgFooter" src="./assets/assets/logo.svg" alt="Logo-Image-Footer">
+                    <p class="footerParagraph">Exclusive NFT Collection</p>
+                    <i class="icon fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="icon fa fa-twitter" aria-hidden="true"></i>
+                    <i class="icon fa fa-instagram" aria-hidden="true"></i>
+                    <i class="icon fa fa-btc" aria-hidden="true"></i>
+                </div>
+                <div class="footerNavigation">
+                <div class="navigationCard">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a class="footerALink" href="">About</a></li>
+                        <li><a class="footerALink" href="">Terms</a></li>
+                        <li><a class="footerALink" href="">Legal</a></li>
+                    </ul>
+                </div>
+                <div class="navigationCard">
+                    <h4>NFT</h4>
+                    <ul>
+                        <li><a class="footerALink" href="">OpenSea</a></li>
+                        <li><a class="footerALink" href="">Maker</a></li>
+                        <li><a class="footerALink" href="">Learn</a></li>
+                    </ul>
+                </div>
+                <div class="navigationCard">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a class="footerALink" href="">Press</a></li>
+                        <li><a class="footerALink" href="">Support</a></li>
+                    </ul>
+                </div>
+                <div class="navigationCard">
+                    <h4>Social</h4>
+                    <ul>
+                        <li><a class="footerALink" href="">Twitter</a></li>
+                        <li><a class="footerALink" href="">Instagram</a></li>
+                    </ul>
+                </div>
+                </div>
+             </div>
+             <div class="copyrightLine">
+                 <p class="Copyright">© Copyright 2022 NFTlanding</p>
+                 <p class="Copyright CopyrightHidden">Launching August 2022</p>
+            </div>
+        </div>
     </footer>
     <!--/ FOOTER -->
 </body>
