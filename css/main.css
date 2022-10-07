@@ -85,6 +85,7 @@ html p, html a, html ul li {
   font-weight: 400;
   font-size: 2rem;
   color: #555555;
+  line-height: 1.5em;
 }
 html .overrideTextColor {
   color: #111111;
@@ -100,37 +101,31 @@ html ul li {
   padding-bottom: 0.5em;
 }
 html a {
+  font-weight: 500;
   text-decoration: underline;
 }
-
-body {
+html body {
   background-color: #ffffff;
 }
-
-.paddingTopAndBottom, section {
+html .paddingTopAndBottom, html section {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-
-main {
+html main {
   overflow: hidden;
   overflow-y: visible;
 }
-
-.paddingLeftandRight, .news .newsTextBox, .container {
+html .paddingLeftandRight, html .news .newsTextBox, .news html .newsTextBox, html .container {
   padding-left: 3.2rem;
   padding-right: 3.2rem;
 }
-
-.container {
+html .container {
   height: 100%;
 }
-
-.icon, .header__container .fa-bars {
+html .icon, html header .header__container .fa-bars, header .header__container html .fa-bars {
   color: #999999;
 }
-
-button {
+html button {
   color: #111111;
   font-weight: 600;
   font-size: 2rem;
@@ -139,14 +134,15 @@ button {
   border: solid 5px;
   border-color: #ff6643;
   background-color: transparent;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 header {
   height: 10rem;
   background-color: transparent;
 }
-
-.header__container {
+header .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,12 +153,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.header__container .logoImg {
+header .header__container .logoImg {
   height: 3.6rem;
   -ms-flex-item-align: center;
       align-self: center;
 }
-.header__container .fa-bars {
+header .header__container .fa-bars {
   font-size: 2.4rem;
 }
 
@@ -191,10 +187,12 @@ header {
   position: relative;
   width: 100%;
   height: 100%;
+  padding-bottom: 2rem;
 }
 .news .news__container {
   width: 100%;
   height: 100%;
+  padding-top: 8rem;
 }
 .news .news__img {
   overflow: hidden;
@@ -220,39 +218,49 @@ header {
   min-height: 100%;
 }
 
-.auctionCard--line p, .auctionCard--line html ul li, html ul .auctionCard--line li, .auctionCard--line html a, html .auctionCard--line a {
+.auction .auctionCard--line p, .auction .auctionCard--line html ul li, html ul .auction .auctionCard--line li, .auction .auctionCard--line html a, html .auction .auctionCard--line a {
   color: #777777;
 }
-
-.auctionCard--line--1 p, .auctionCard--line--1 html ul li, html ul .auctionCard--line--1 li, .auctionCard--line--1 html a, html .auctionCard--line--1 a {
+.auction .auctionCard--line--1 {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+.auction .auctionCard--line--1 p, .auction .auctionCard--line--1 html ul li, html ul .auction .auctionCard--line--1 li, .auction .auctionCard--line--1 html a, html .auction .auctionCard--line--1 a {
   font-size: 1.2rem;
   font-weight: 500;
 }
-.auctionCard--line--1 .auctionCard--line--1__left p, .auctionCard--line--1 .auctionCard--line--1__left html ul li, html ul .auctionCard--line--1 .auctionCard--line--1__left li, .auctionCard--line--1 .auctionCard--line--1__left html a, html .auctionCard--line--1 .auctionCard--line--1__left a {
+.auction .auctionCard--line--1 .auctionCard--line--1__left p, .auction .auctionCard--line--1 .auctionCard--line--1__left html ul li, html ul .auction .auctionCard--line--1 .auctionCard--line--1__left li, .auction .auctionCard--line--1 .auctionCard--line--1__left html a, html .auction .auctionCard--line--1 .auctionCard--line--1__left a {
   color: #FF8139;
 }
-
-.auctionCard--line--2 p, .auctionCard--line--2 html ul li, html ul .auctionCard--line--2 li, .auctionCard--line--2 html a, html .auctionCard--line--2 a {
+.auction .auctionCard--line--2 {
+  margin-top: 0.3rem;
+  margin-bottom: 0rem;
+}
+.auction .auctionCard--line--2 p, .auction .auctionCard--line--2 html ul li, html ul .auction .auctionCard--line--2 li, .auction .auctionCard--line--2 html a, html .auction .auctionCard--line--2 a {
   color: #111111;
   font-weight: 500;
   font-size: 2rem;
 }
-
-.auctionCard--line--3 p, .auctionCard--line--3 html ul li, html ul .auctionCard--line--3 li, .auctionCard--line--3 html a, html .auctionCard--line--3 a {
+.auction .auctionCard--line--3 {
+  margin-top: 0rem;
+  margin-bottom: 1.8rem;
+}
+.auction .auctionCard--line--3 p, .auction .auctionCard--line--3 html ul li, html ul .auction .auctionCard--line--3 li, .auction .auctionCard--line--3 html a, html .auction .auctionCard--line--3 a {
   font-weight: 400;
   font-size: 1.8rem;
 }
-
-.auctionCard {
+.auction .auctionCard {
   background-color: #EEEEEE;
   overflow: hidden;
   border-radius: 15px;
+  max-width: 290px;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
 }
-.auctionCard__img {
+.auction .auctionCard__img {
   min-width: 100%;
 }
-
-.auctionCard--line {
+.auction .auctionCard--line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,13 +269,11 @@ header {
           justify-content: space-between;
   padding: 0em 2em;
 }
-.auctionCard--line p, .auctionCard--line html ul li, html ul .auctionCard--line li, .auctionCard--line html a, html .auctionCard--line a {
+.auction .auctionCard--line p, .auction .auctionCard--line html ul li, html ul .auction .auctionCard--line li, .auction .auctionCard--line html a, html .auction .auctionCard--line a {
   margin: 0;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding: 0;
 }
-
-.auctionCard--line--2__right {
+.auction .auctionCard--line--2__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,14 +281,19 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.auctionCard--line--2__right img {
+.auction .auctionCard--line--2__right img {
   padding-right: 1em;
   height: 3rem;
 }
 
+.about {
+  overflow: hidden;
+  border-top: #EEEEEE solid 2px;
+  border-bottom: #EEEEEE solid 2px;
+}
 .about .NFTImg {
-  right: -150px;
-  top: 20%;
+  right: -170px;
+  top: 9%;
   min-width: 400px;
 }
 .about .textBox {
@@ -303,7 +314,7 @@ footer .footerParagraph {
   margin-top: 3rem;
   margin-bottom: 3.2rem;
 }
-footer .icon, footer .header__container .fa-bars, .header__container footer .fa-bars {
+footer .icon, footer header .header__container .fa-bars, header .header__container footer .fa-bars {
   font-size: 1.8rem;
   padding-right: 1.6rem;
 }

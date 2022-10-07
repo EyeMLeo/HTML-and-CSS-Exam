@@ -13,14 +13,15 @@ $btn-border-color: #ff6643;
 $card-color: #EEEEEE;
 $NFT-series-color: #FF8139;
 $NFT-Text-Details:#777777;
+$About-Box-BorderColor:#EEEEEE;
+
 
 .shadowForText{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-
 }
 
 //page styles
+// HTML!
 html{
 font-size: 10px;
 font-family: 'Inter', sans-serif;
@@ -58,6 +59,7 @@ p{
     font-weight: 400;
     font-size: 2rem;
     color: $secondary-text-color;
+    line-height: 1.5em;
 }
 .overrideTextColor{
     color:$primary-text-color
@@ -79,14 +81,14 @@ ul{
 
 a{
     @extend p;
+    font-weight: 500;
     text-decoration: underline;
 }
-}
+
 
 
 body{
 background-color:$background-color;
-
 }
 
 .paddingTopAndBottom{
@@ -101,8 +103,6 @@ section{
 main{
     overflow: hidden;
     overflow-y: visible;
-    
-
 }
 
 .paddingLeftandRight{
@@ -129,42 +129,32 @@ button{
     border: solid 5px;
     border-color: $btn-border-color;
     background-color: transparent;
-
-
-
-
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
 }
-
-
-
-
-
 // /Extended use
+}
+// / HTML!
 // HEADER
 header{
     height: 10rem;
     background-color: transparent;
-}
 
+    .header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+        .logoImg{
+            height: 3.6rem;
+            align-self: center;
+        }
 
-.header__container{
-display: flex;
-justify-content: space-between;
-align-items: center;
-
-    .logoImg{
-        height: 3.6rem;
-        align-self: center;
+        .fa-bars{
+            @extend.icon;
+           font-size: 2.4rem;
+        }
     }
-
-    .fa-bars{
-        @extend.icon;
-       font-size: 2.4rem;
-    }
-
-
-
 }
 // /HEADER
 // HERO
@@ -213,9 +203,11 @@ align-items: center;
     position: relative;
     width: 100%;
     height: 100%;
+    padding-bottom: 2rem;
     .news__container{
         width: 100%;
         height: 100%;
+        padding-top: 8rem;
     }
 
 
@@ -247,7 +239,6 @@ align-items: center;
 }
 // / NEWS
 // ICONS
-
 .icons{
 
 
@@ -265,99 +256,107 @@ align-items: center;
     min-height: 100%;
 }
 
-
-
 }
 // /ICONS
 // AUCTION
+.auction{
+
     // auction card teksto stilizacijos
-.auctionCard--line{
-    p{
-        color: $NFT-Text-Details;
-    }
-}
-
-    .auctionCard--line--1{
+    .auctionCard--line{
         p{
-        font-size: 1.2rem;
-        font-weight: 500
+            color: $NFT-Text-Details;
         }
+    }
 
-        .auctionCard--line--1__left{
+        .auctionCard--line--1{
+            margin-top: 2rem;
+            margin-bottom: 0rem;
             p{
-            color: $NFT-series-color;
+            font-size: 1.2rem;
+            font-weight: 500;
             }
-        }  
+
+            .auctionCard--line--1__left{
+                p{
+                color: $NFT-series-color;
+                }
+            }  
+
+        }
+
+        .auctionCard--line--2{
+            margin-top: 0.3rem;
+            margin-bottom: 0rem;
+            p{
+            color: $primary-text-color;
+            font-weight: 500;
+            font-size: 2rem;
+            }
+        }
+
+        .auctionCard--line--3{
+            margin-top: 0rem;
+            margin-bottom: 1.8rem;
+            p{
+
+            font-weight: 400;
+            font-size: 1.8rem;
+            }
+        }
+    .auctionCard{
+    background-color: $card-color;
+    overflow: hidden;
+    border-radius: 15px;
+    max-width: 290px;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+
+        &__img{
+            min-width: 100%;
+        }
 
     }
 
-    .auctionCard--line--2{
+    .auctionCard--line{
+        display:flex;
+        justify-content: space-between;
+        padding: 0em 2em;
+
         p{
-        color: $primary-text-color;
-        font-weight: 500;
-        font-size: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+
+    }
+
+    .auctionCard--line--2__right{
+    display: flex;
+    align-items: center;
+
+        img{
+            padding-right: 1em;
+            height: 3rem;
         }
     }
-
-    .auctionCard--line--3{
-        p{
-
-        font-weight: 400;
-        font-size: 1.8rem;
-        }
-    }
-
-
-
-.auctionCard{
-background-color: $card-color;
-overflow: hidden;
-border-radius: 15px;
-
-    &__img{
-        min-width: 100%;
-    }
-
 }
-
-.auctionCard--line{
-    display:flex;
-    justify-content: space-between;
-    padding: 0em 2em;
-
-    p{
-        margin: 0;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-    }
-
-
-
-
-}
-
-.auctionCard--line--2__right{
-display: flex;
-align-items: center;
-
-    img{
-        padding-right: 1em;
-        height: 3rem;
-    }
-
-
-}
-
 // /AUCTION
 //about
-
 .about{
+    overflow: hidden;
+border-top: $About-Box-BorderColor solid 2px;
+border-bottom: $About-Box-BorderColor solid 2px;
+
+
+
     @extend .hero;
 
     .NFTImg{
     
-         right: -150px;
-         top: 20%;
+         right: -170px;
+         top: 9%;
          min-width: 400px;
     }
 
@@ -439,4 +438,6 @@ footer{
         // News background extra padding top
         // Icons (companies) weird sizes
         // Auction Card Sizes and positions, margins paddings
+        // a link wrong underline
+        // add auction cards
         
