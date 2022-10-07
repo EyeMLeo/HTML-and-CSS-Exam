@@ -258,6 +258,10 @@ h3{
     min-height: 100%;
 }
 
+.companyIconHidden{
+    visibility: hidden;
+}
+
 }
 // /ICONS
 // AUCTION
@@ -410,6 +414,7 @@ button{
 // /about
 //footer
 footer{
+    overflow: hidden;
 
     .logoImgFooter{
         height: 3.6rem;
@@ -448,7 +453,18 @@ footer{
     .iconBox{
     margin-bottom: 3rem;       
     }
+    .copyrightLine{
+        display: flex;
+        justify-content: space-between;
+        min-width: 700px;
 
+
+    }
+
+    .CopyrightHidden{
+    visibility: hidden;
+
+    }
 
 }
 // /footer
@@ -487,6 +503,9 @@ footer{
 
 
         @media screen and (min-width: 1200px){
+
+
+
             html{
               .hero{
                   h1{
@@ -514,7 +533,7 @@ footer{
 
             .icons{
                  .iconContainer{
-                     grid-template-columns: 1fr 1fr 1fr 1fr ;
+                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
 
                  }
         }
@@ -536,7 +555,20 @@ footer{
 
         footer{
             padding-top: 10rem;
-        }
+
+            
+
 
         }
+            .CopyrightHidden{
+                visibility:visible;
+        }
 
+
+        .icons{
+        .companyIconHidden{
+            visibility:visible;
+        }
+        }
+
+    }

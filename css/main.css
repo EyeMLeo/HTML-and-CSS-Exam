@@ -232,6 +232,9 @@ header .header__container .fa-bars {
   justify-self: self-start;
   min-height: 100%;
 }
+.icons .companyIconHidden {
+  visibility: hidden;
+}
 
 .auction .auctionCardBox {
   display: grid;
@@ -354,6 +357,9 @@ header .header__container .fa-bars {
   z-index: 1;
 }
 
+footer {
+  overflow: hidden;
+}
 footer .logoImgFooter {
   height: 3.6rem;
 }
@@ -382,6 +388,18 @@ footer .footerNavigation {
 footer .iconBox {
   margin-bottom: 3rem;
 }
+footer .copyrightLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 700px;
+}
+footer .CopyrightHidden {
+  visibility: hidden;
+}
 
 @media screen and (min-width: 1200px) {
   html .hero h1 {
@@ -398,7 +416,7 @@ footer .iconBox {
     min-width: 68rem;
   }
   .icons .iconContainer {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   .footerGridLine {
     display: grid;
@@ -409,5 +427,11 @@ footer .iconBox {
   }
   footer {
     padding-top: 10rem;
+  }
+  .CopyrightHidden {
+    visibility: visible;
+  }
+  .icons .companyIconHidden {
+    visibility: visible;
   }
 }/*# sourceMappingURL=main.css.map */
