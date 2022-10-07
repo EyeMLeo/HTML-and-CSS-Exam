@@ -508,43 +508,29 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // TO FIX
-        // Hero IMG
-        // News background strech and scale
-        // News background extra padding top
-        // Icons (companies) weird sizes
-        // Auction Card Sizes and positions, margins paddings
-        // a link wrong underline
-        // add auction cards
-        
-
-
-
 //MEDIA
         @media screen and (min-width: 1000px){
+//MEDIA ALL
+html{
+.container{
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+}
+// /MEDIA ALL
 // MEDIA header
 header{
+padding-top: 7rem;
+padding-bottom: 13rem;
+
     ul{
         display: flex;
     }
     .fa-bars{
         display: none;
     }
+
+
 
 
 }
@@ -561,8 +547,8 @@ header{
 // / MEDIA hero
 // MEDIA news
 .news{
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
     // prideda margin prie backgroundo
     // Sitas padarytas tik del to nes taip padaryta pavizdyje.
 
@@ -602,8 +588,19 @@ header{
 // / MEDIA auction
 // MEDIA about
 .about{
+
+    padding-top: 5rem;
     h1{
     font-size:5.6rem;
+    padding-bottom: 2.4rem;
+    margin-bottom: 0;
+    }
+    h3{
+        margin-bottom: 2.4rem;
+    }
+    button{
+        margin-top: 2rem;
+        margin-bottom: 8rem;
     }
 }
 // / MEDIA about
@@ -620,6 +617,13 @@ footer{
     }
         .CopyrightHidden{
             visibility:visible;
+    }
+
+
+    .copyrightLine{
+padding-top: 11rem;
+
+
     }
 }
 // / MEDIA footer
