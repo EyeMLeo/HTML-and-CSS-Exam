@@ -218,6 +218,12 @@ header .header__container .fa-bars {
   min-height: 100%;
 }
 
+.auction .auctionCardBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4rem;
+  overflow-x: scroll;
+}
 .auction .auctionCard--line p, .auction .auctionCard--line html ul li, html ul .auction .auctionCard--line li, .auction .auctionCard--line html a, html .auction .auctionCard--line a {
   color: #777777;
 }
@@ -253,7 +259,7 @@ header .header__container .fa-bars {
   background-color: #EEEEEE;
   overflow: hidden;
   border-radius: 15px;
-  max-width: 290px;
+  min-width: 290px;
   margin-top: 4rem;
   margin-bottom: 5rem;
 }

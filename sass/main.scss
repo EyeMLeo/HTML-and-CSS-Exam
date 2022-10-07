@@ -260,6 +260,13 @@ header{
 // /ICONS
 // AUCTION
 .auction{
+    .auctionCardBox{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 4rem;
+        overflow-x: scroll;
+    }
+
 
     // auction card teksto stilizacijos
     .auctionCard--line{
@@ -307,7 +314,7 @@ header{
     background-color: $card-color;
     overflow: hidden;
     border-radius: 15px;
-    max-width: 290px;
+    min-width: 290px;
     margin-top: 4rem;
     margin-bottom: 5rem;
 
