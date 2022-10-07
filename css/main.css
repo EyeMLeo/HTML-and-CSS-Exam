@@ -162,33 +162,39 @@ header .header__container .fa-bars {
   font-size: 2.4rem;
 }
 
-.hero, .about {
+.hero {
   padding-top: 0;
 }
-.hero h3, .about h3 {
+.hero h3 {
   padding-top: 7rem;
 }
-.hero .container, .about .container {
+.hero .container {
   display: grid;
   grid-template-columns: auto auto;
 }
-.hero .minimumBoxForTextBox, .about .minimumBoxForTextBox {
+.hero .minimumBoxForTextBox {
   overflow: visible;
-  min-width: 19rem;
+  min-width: 20rem;
   height: 100%;
   z-index: 10;
 }
-.hero .textBox, .about .textBox {
+.hero .textBox {
   width: 27.2em;
 }
-.hero .imgBox, .about .imgBox {
+.hero .imgBox {
   height: 100%;
   width: 100%;
-  min-width: 400px;
+  min-width: 370px;
+  display: grid;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.hero .NFTImg, .about .NFTImg {
+.hero .NFTImg {
   max-height: 100%;
-  min-width: 400px;
+  min-width: 300px;
   z-index: 1;
 }
 
@@ -305,14 +311,47 @@ header .header__container .fa-bars {
   overflow: hidden;
   border-top: #EEEEEE solid 2px;
   border-bottom: #EEEEEE solid 2px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
-.about .NFTImg {
-  right: -170px;
-  top: 9%;
-  min-width: 400px;
+.about button {
+  margin-bottom: 8rem;
+}
+.about h3 {
+  padding-top: 7rem;
+}
+.about .container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.about .minimumBoxForTextBox {
+  overflow: visible;
+  min-width: 13rem;
+  height: 100%;
+  z-index: 10;
 }
 .about .textBox {
-  min-width: 207px;
+  min-width: 20.2em;
+}
+.about .textBox p, .about .textBox html ul li, html ul .about .textBox li, .about .textBox html a, html .about .textBox a {
+  max-width: 26em;
+}
+.about .imgBox {
+  height: 100%;
+  width: 100%;
+  min-width: 400px;
+  display: grid;
+  -ms-flex-line-pack: end;
+      align-content: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5rem;
+}
+.about .NFTImg {
+  max-height: 100%;
+  min-width: 200px;
+  z-index: 1;
 }
 
 footer .logoImgFooter {
@@ -345,8 +384,11 @@ footer .iconBox {
 }
 
 @media screen and (min-width: 1200px) {
-  html h1 {
+  html .hero h1 {
     font-size: 9.6rem;
+  }
+  html .about h1 {
+    font-size: 5.6rem;
   }
   .news {
     margin-left: 4rem;
@@ -364,5 +406,8 @@ footer .iconBox {
   }
   .footerGridLine .footerNavigation {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  footer {
+    padding-top: 10rem;
   }
 }/*# sourceMappingURL=main.css.map */
