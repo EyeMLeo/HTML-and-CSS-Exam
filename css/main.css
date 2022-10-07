@@ -102,7 +102,6 @@ html ul li {
 }
 html a {
   font-weight: 500;
-  text-decoration: underline;
 }
 html body {
   background-color: #ffffff;
@@ -141,6 +140,20 @@ html button {
 header {
   height: 10rem;
   background-color: transparent;
+}
+header s {
+  font-size: 2rem;
+}
+header ul {
+  display: none;
+}
+header ul li {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 2rem;
+}
+header .headerLinkBeutyfy {
+  color: #FF3998;
 }
 header .header__container {
   display: -webkit-box;
@@ -239,6 +252,9 @@ header .header__container .fa-bars {
   visibility: hidden;
 }
 
+.auction a {
+  text-decoration: underline;
+}
 .auction .auctionCardBox {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -404,48 +420,56 @@ footer .CopyrightHidden {
   visibility: hidden;
 }
 
-@media screen and (min-width: 1200px) {
-  html .hero h1 {
+@media screen and (min-width: 1000px) {
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .fa-bars {
+    display: none;
+  }
+  .hero h1 {
     font-size: 9.6rem;
   }
-  html .about h1 {
-    font-size: 5.6rem;
+  .hero .textBox {
+    min-width: 68rem;
   }
   .news {
     margin-left: 4rem;
     margin-right: 4rem;
   }
-  .textBox {
-    min-width: 68rem;
-  }
-  .icons .iconContainer {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
-  .footerGridLine {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .footerGridLine .footerNavigation {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  footer {
-    padding-top: 10rem;
-  }
-  .CopyrightHidden {
-    visibility: visible;
-  }
-  .icons .companyIconHidden {
-    visibility: visible;
-  }
-  .news__container {
+  .news .news__container {
     overflow: hidden;
     border-radius: 1.5rem;
   }
-  .news__container .news__img {
+  .news .news__container .news__img {
     border-radius: inherit;
   }
   .icons {
     padding-top: 12.2rem;
     padding-bottom: 8rem;
+  }
+  .icons .companyIconHidden {
+    visibility: visible;
+  }
+  .icons .iconContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .about h1 {
+    font-size: 5.6rem;
+  }
+  footer {
+    padding-top: 10rem;
+  }
+  footer .footerGridLine {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .footerGridLine .footerNavigation {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  footer .CopyrightHidden {
+    visibility: visible;
   }
 }/*# sourceMappingURL=main.css.map */
