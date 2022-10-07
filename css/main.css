@@ -181,6 +181,9 @@ header .header__container .fa-bars {
 .hero .textBox {
   width: 27.2em;
 }
+.hero .textBox p, .hero .textBox html ul li, html ul .hero .textBox li, .hero .textBox html a, html .hero .textBox a {
+  max-width: 520px;
+}
 .hero .imgBox {
   height: 100%;
   width: 100%;
@@ -433,5 +436,16 @@ footer .CopyrightHidden {
   }
   .icons .companyIconHidden {
     visibility: visible;
+  }
+  .news__container {
+    overflow: hidden;
+    border-radius: 1.5rem;
+  }
+  .news__container .news__img {
+    border-radius: inherit;
+  }
+  .icons {
+    padding-top: 12.2rem;
+    padding-bottom: 8rem;
   }
 }/*# sourceMappingURL=main.css.map */
