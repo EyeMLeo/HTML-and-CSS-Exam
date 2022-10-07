@@ -504,92 +504,92 @@ footer{
 
 
 
-
+//MEDIA
         @media screen and (min-width: 1200px){
+// MEDIA header
+.header{
 
 
 
-            html{
-              .hero{
-                  h1{
-                  font-size:9.6rem;
-                  }
-              }
 
-              .about{
-                h1{
-                font-size:5.6rem;
-                }
-            }
 
-             }
 
-            .news{
-                margin-left: 4rem;
-                margin-right: 4rem;
-                // prideda margin prie backgroundo
-                // Sitas padarytas tik del to nes taip padaryta pavizdyje.
-            }
-            .textBox{
-                min-width: 68rem;
-            }
+    
+}
+// / MEDIA header
+// MEDIA hero
+.hero{
+    h1{
+    font-size:9.6rem;
+    }
+    .textBox{
+        min-width: 68rem;
+    }
+}
+// / MEDIA hero
+// MEDIA news
+.news{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    // prideda margin prie backgroundo
+    // Sitas padarytas tik del to nes taip padaryta pavizdyje.
 
-            .icons{
-                 .iconContainer{
-                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-
-                 }
+    .news__container{
+        overflow: hidden;
+        border-radius: 1.5rem;
+        .news__img{
+            border-radius: inherit;
         }
+    }
 
 
 
 
+}
+// / MEDIA news
+// MEDIA icons
+.icons{
+    padding-top: 12.2rem;
+    padding-bottom: 8rem;
 
-        .footerGridLine{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-                .footerNavigation{
-                    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-                }
-
-
-        }
-
-        footer{
-            padding-top: 10rem;
-
-            
-
-
-        }
-            .CopyrightHidden{
-                visibility:visible;
-        }
-
-
-        .icons{
         .companyIconHidden{
             visibility:visible;
         }
+        
+        .iconContainer{
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+
         }
 
 
-        .news__container{
-            overflow: hidden;
-            border-radius: 1.5rem;
-            .news__img{
-                border-radius: inherit;
-            }
-        }
-
-// MEDIA icons
-.icons{
-padding-top: 12.2rem;
-padding-bottom: 8rem;
-}
-// / MEDIA icons
-
-
-
+    
     }
+// / MEDIA icons
+// MEDIA auction
+
+// / MEDIA auction
+// MEDIA about
+.about{
+    h1{
+    font-size:5.6rem;
+    }
+}
+// / MEDIA about
+// MEDIA footer
+footer{
+    padding-top: 10rem;
+    .footerGridLine{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+            .footerNavigation{
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            }
+    }
+        .CopyrightHidden{
+            visibility:visible;
+    }
+}
+// / MEDIA footer
+}
+// / MEDIA
